@@ -1,3 +1,38 @@
+# Task 5
+
+Create a registration page for a summer camp for children. The page will contain a form, after submitting the form it will be validated. If the form is in order,
+a page will be displayed with a recap of the information entered. If there is any error in the form, the form will be displayed again, the data entered by the user in the form will be filled in
+and an error message will be displayed for the fields with errors.
+
+1. Use this repository as a template from which to create a repository in your GitHub account, or continue with your assignment from the lesson.
+1. Clone the repository **from your GitHub account** to your local machine.
+1. Launch the cloned application and open the [http://localhost:8080/](http://localhost:8080/) page in your browser. You will see a page with the text "TODO".
+1. Create a container (Java Bean) to store the `RegistrationForm` data. Store the gender and the selected tour as `String`, choose some code for the tour - e.g. `tour-1`, `tour-2`, etc.
+1. Create a controller method that will receive form data in `RegistrationForm`.
+1. Create an HTML form with the following data. The appearance of the form doesn't matter that much, but if you want to create a quite usable form without writing styles,
+   you can use the Bootstrap library.
+   Participant (child) information:
+   * name (required)
+   * last name (required)
+   * date of birth (required)
+   * gender (boy/girl - mandatory)
+   * tour (e.g. 5th to 11th July, 12th to 18th July, 19th to 25th July - mandatory)
+   * email to parents (optional)
+   * phone number of parent (optional)
+1. Configure the validation data from the form in Java.
+1. Check the following conditions in the controller method. If they are not met, cause the appropriate error message to be printed for the appropriate field.
+   * Age between 9 and 15 years (inclusive) - recall the code for calculating the age:
+     ```java
+     Period period = birthDate.until(LocalDate.now());
+     int age = period.getYears();
+     ```
+1. Create a page to display the registration recap. You can copy the form page and use `span`s instead of `inputs`, or set the `readonly` attribute to the inputs.
+
+
+
+
+
+
 # Úkol 5
 
 Vytvoř stránku pro registraci na letní dětský tábor. Stránka bude obsahovat formulář, po jeho odeslání se provede validace. Pokud bude formulář v pořádku,

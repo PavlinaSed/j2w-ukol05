@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.GetMapping;
  * Kontroler obsluhující registraci účastníků dětského tábora.
  */
 @Controller
-public class RegistraceController {
+public class RegistrationController {
 
   @GetMapping("/")
-  public String formular() {
-    return "formular";
+  public String form() {
+    return "form";
   }
 
 }
