@@ -14,12 +14,14 @@ public class RegistrationForm {
     @NotNull
     private LocalDate birthDate;
     @NotBlank
-    private Gender gender;
+    private String gender;
     @NotBlank
-    private Tour tour;
+    private String tour;
     @Email
     private String email;
+
     private String phoneNumber;
+
 
     public String getFirstName() {
         return firstName;
@@ -45,19 +47,19 @@ public class RegistrationForm {
         this.birthDate = birthDate;
     }
 
-    public Gender getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(Gender gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
-    public Tour getTour() {
+    public String getTour() {
         return tour;
     }
 
-    public void setTour(Tour tour) {
+    public void setTour(String tour) {
         this.tour = tour;
     }
 
