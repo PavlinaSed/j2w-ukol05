@@ -30,13 +30,13 @@
             <div class="radek">Gender:</div>
             <div class="group">
                 <div>
-                    <input id="genderMale" type="radio" name="gender" value="male"/>
-                    <label for="genderMale">Male</label>
+                    <input id="gender" type="radio" name="gender" value="male"/>
+                    <label for="gender">Male</label>
                 </div>
                 <div>
-                    <input id="genderFemale" type="radio" name="gender" value="female"/>
+                    <input id="gender" type="radio" name="gender" value="female"/>
 
-                    <label for="genderFemale">Female</label>
+                    <label for="gender">Female</label>
                 </div>
             </div>
             [@spring.bind "form.gender"/]
@@ -52,7 +52,7 @@
             <div class="error">[@spring.showErrors "<br>"/]</div>
 
             <label for="email">E-mail:</label>
-            [@spring.formInput path="form.email"  /]
+            [@spring.formInput path="form.email" fieldType="email"/]
             <div class="error">[@spring.showErrors "<br>"/]</div>
 
             <label for="phoneNumber">Phone Number:</label>
